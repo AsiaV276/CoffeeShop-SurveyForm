@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>Coffee Shop Survey</title>
+</head>
+<body>
+
+    <div id="main">
+
+        <header>
+        <h1 id="title">Coffee Shop Survey</h1>
+        <p id="description"><em>Thank you for taking the time to help us improve our service.</em></p>
+        </header>
+
+        <form action="" id="survey-form">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+            <label for="age">Age (optional)</label>
+            <input type="number" name="age" id="number" min="1" max="100" placeholder="Age">
+           
+            <label for="visited">About how many times have you visited our coffee shop?</label>
+            <select name="visited" id="dropdown">
+                <option value="none">None</option>
+                <option value="one-three">1-3</option>
+                <option value="four-ten">4-10</option>
+                <option value="teens">11-19</option>
+                <option value="twen-plus">20+</option>
+            </select><br><br>
+
+            <label for="type-drink">Which drink do you prefer?</label><br>
+                <label for="coffee" class="container">Coffee
+                    <input id="coffee" class="checkmark" value="coffee" type="radio" name="type-drink">
+                </label>
+                <label for="tea">Tea
+                    <input id="tea" value="tea" type="radio" name="type-drink">
+                </label>
+                <label for="chai">Chai
+                    <input id="chai" value="chai" type="radio" name="type-drink">
+                </label>
+                <label for="latte">Latte
+                    <input id="latte" value="latte" type="radio" name="type-drink">
+                </label>
+                <label for="something-else">Something Else
+                    <input id="something-else" value="something-else" type="radio" name="type-drink"><br><br>
+
+            <label for="visit-days">Which days of the week do you visit our coffee shop most often?</label><br>
+                <label for="mon">Monday
+                    <input id="mon" value="monday" type="checkbox" name="visit-days">
+                </label>
+                <label for="tues">Tuesday
+                    <input id="tues" value="tuesday" type="checkbox" name="visit-days">
+                </label>
+                <label for="wed">Wednesday
+                    <input id="wed" value="wednesday" type="checkbox" name="visit-days">
+                </label>
+                <label for="thurs">Thursday
+                    <input id="thurs" value="thursday" type="checkbox" name="visit-days">
+                </label>
+                <label for="fri">Friday
+                    <input id="fri" value="friday" type="checkbox" name="visit-days">
+            
+            
+            <label for="comment" id="comment-label">Any suggestions?
+            <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Enter your comment here"></textarea>
+            </label>
+
+            <input type="submit" id="submit">
+        </form>
+    </div>
+</body>
+</html>
