@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
     <title>Coffee Shop Survey</title>
 </head>
@@ -34,8 +35,8 @@
             </select><br><br>
 
             <label for="type-drink">Which drink do you prefer?</label><br>
-                <label for="coffee" class="container">Coffee
-                    <input id="coffee" class="checkmark" value="coffee" type="radio" name="type-drink">
+                <label for="coffee">Coffee
+                    <input id="coffee" value="coffee" type="radio" name="type-drink">
                 </label>
                 <label for="tea">Tea
                     <input id="tea" value="tea" type="radio" name="type-drink">
@@ -46,31 +47,24 @@
                 <label for="latte">Latte
                     <input id="latte" value="latte" type="radio" name="type-drink">
                 </label>
-                <label for="something-else">Something Else
-                    <input id="something-else" value="something-else" type="radio" name="type-drink"><br><br>
+                <label for="other">Other
+                    <input id="other" value="other" type="radio" name="type-drink">
+                </label><br><br>
+
 
             <label for="visit-days">Which days of the week do you visit our coffee shop most often?</label><br>
-                <label for="mon">Monday
-                    <input id="mon" value="monday" type="checkbox" name="visit-days">
-                </label>
-                <label for="tues">Tuesday
-                    <input id="tues" value="tuesday" type="checkbox" name="visit-days">
-                </label>
-                <label for="wed">Wednesday
-                    <input id="wed" value="wednesday" type="checkbox" name="visit-days">
-                </label>
-                <label for="thurs">Thursday
-                    <input id="thurs" value="thursday" type="checkbox" name="visit-days">
-                </label>
-                <label for="fri">Friday
-                    <input id="fri" value="friday" type="checkbox" name="visit-days">
-            
-            
+                <ul>
+                    <li><input id="mon" value="monday" type="checkbox" name="visit-days"><label for="mon">Monday</label></li>
+                    <li><input id="tues" value="tuesday" type="checkbox" name="visit-days"><label for="tues">Tuesday</label></li>
+                    <li><input id="wed" value="wednesday" type="checkbox" name="visit-days"><label for="wed">Wednesday</label></li>
+                    <li><input id="thurs" value="thursday" type="checkbox" name="visit-days"><label for="thurs">Thursday</label></li>
+                    <li><input id="fri" value="friday" type="checkbox" name="visit-days"><label for="fri">Friday</ul></li>
+                </ul>
             <label for="comment" id="comment-label">Any suggestions?
             <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Enter your comment here"></textarea>
             </label>
 
-            <input type="submit" id="submit">
+            <input type="submit" id="submit" class=" btn btn-outline-light btn-block">
         </form>
     </div>
 </body>
